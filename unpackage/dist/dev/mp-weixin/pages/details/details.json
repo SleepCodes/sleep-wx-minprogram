@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "酒店详情页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "hotel-banner": "/components/hotel-banner/hotel-banner",
+    "miniprogram-jump": "/components/miniprogram-jump/miniprogram-jump",
+    "hotel-detail": "/components/hotel-detail/hotel-detail"
+  }
+}

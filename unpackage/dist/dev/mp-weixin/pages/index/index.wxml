@@ -1,0 +1,1 @@
+<view class="content data-v-57280228"><sc-map vue-id="8dd740cc-1" hotels="{{hotelList}}" data-event-opts="{{[['^onChange',[['change']]]]}}" bind:onChange="__e" class="data-v-57280228" bind:__l="__l"></sc-map><sc-list vue-id="8dd740cc-2" list="{{hotelList}}" class="data-v-57280228" bind:__l="__l"></sc-list></view>

@@ -1,0 +1,1 @@
+<view><swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"><block wx:for="{{images}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><swiper-item><image class="image" src="{{item.url}}" mode="aspectFill"></image></swiper-item></block></block></swiper></view>

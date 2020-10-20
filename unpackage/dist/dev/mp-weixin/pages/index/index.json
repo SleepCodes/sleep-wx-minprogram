@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "想能睡眠-安睡号码",
+  "usingComponents": {
+    "sc-map": "/components/sc-map/sc-map",
+    "sc-list": "/components/sc-list/sc-list"
+  }
+}

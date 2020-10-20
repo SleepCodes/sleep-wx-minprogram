@@ -1,0 +1,1 @@
+<view class="content data-v-25abc2c4"><navigator target="miniProgram" app-id="{{AppID}}" class="data-v-25abc2c4"><button class="btn data-v-25abc2c4" type="default">小程序跳转</button></navigator></view>

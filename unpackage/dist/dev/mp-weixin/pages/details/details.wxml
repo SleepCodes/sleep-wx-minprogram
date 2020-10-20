@@ -1,0 +1,1 @@
+<view><hotel-banner vue-id="ffa9e60c-1" images="{{banner}}" bind:__l="__l"></hotel-banner><miniprogram-jump vue-id="ffa9e60c-2" AppID="{{appid}}" bind:__l="__l"></miniprogram-jump><hotel-detail vue-id="ffa9e60c-3" info="{{hotel}}" bind:__l="__l"></hotel-detail></view>

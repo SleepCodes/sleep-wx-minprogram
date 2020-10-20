@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+@font-face {
+  font-family: 'iconfont';  /* project id 2138567 */
+  src: url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.eot');
+  src: url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2138567_mp3d9ynl178.svg#iconfont') format('svg');
+}
+page {
+	font-family: 'iconfont';
+}
+.debug {
+	border: 1rpx red solid;
+}
+.fill{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.row{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.column{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.jc-b{
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+

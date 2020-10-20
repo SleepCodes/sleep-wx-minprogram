@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "room-scroller": "/components/room-scroller/room-scroller"
+  },
+  "component": true
+}

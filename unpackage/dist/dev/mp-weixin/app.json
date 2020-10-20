@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/SyncPage/SyncPage",
+    "pages/list/list",
+    "pages/details/details"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "想能睡眠-安睡号码",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#dfdfdf",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabBar/map.png",
+        "selectedIconPath": "static/tabBar/map-lignt.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "static/tabBar/list.png",
+        "selectedIconPath": "static/tabBar/list-light.png",
+        "text": "酒店列表"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap35.json"
+}
