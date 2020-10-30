@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<map></map>
 	</view>
 </template>
 

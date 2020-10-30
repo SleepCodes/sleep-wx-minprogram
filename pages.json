@@ -8,13 +8,7 @@
 					"titleNView": false
 				}
 			}
-		}, {
-			"path": "pages/SyncPage/SyncPage",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-		}, {
+		},  {
 			"path": "pages/list/list",
 			"style": {
 				"navigationBarTitleText": "",

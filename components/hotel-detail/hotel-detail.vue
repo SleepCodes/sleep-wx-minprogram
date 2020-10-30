@@ -58,8 +58,8 @@
 				uni.openLocation({
 					latitude: this.info.latitude,
 					longitude: this.info.longitude,
-					name:this.info.name,
-					scale:18,
+					name: this.info.name,
+					scale: 18,
 					success(res) {
 						console.log(res);
 					}

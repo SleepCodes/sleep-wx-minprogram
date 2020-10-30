@@ -79,5 +79,19 @@
 	},
 	"uniStatistics": {
 		"enable": false
+	},
+	"h5": {
+		"devServer": {
+			"https": false,
+			"port": 8080,
+			"disableHostCheck": true,
+			"proxy": {
+				"/": {
+					"target": "http://192.168.173:3000",
+					"changeOrigin": true,
+					"secure": false
+				}
+			}
+		}
 	}
 }

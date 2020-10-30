@@ -15,43 +15,23 @@
 			}
 		},
 		onLoad() {
-			// 当前默认地点为桐乡
-			this.getHotelList('330483')
+			this.getHotelList({
+				areaCode: 330483
+			})
 		},
 		methods: {
-			getHotelList(Code) {
-				let _this = this
-				uni.showLoading({
-					title: 'Loading'
-				})
-				uniCloud.callFunction({
-					name: 'getHotelsByCode',
-					data: {
-						areaCode: Code
-					},
-					success(res) {
-						// console.log(res);
-						uni.hideLoading()
-						if (res.result.success) {
-							_this.hotelList = res.result.response.hotels
-						}else{
-							_this.hotelList = []
-						}
-						// console.log(_this.hotelList);
-					},
-					fail(err) {
-						// console.error(err);
-						uni.hideLoading()
-						uni.showModal({
-							content: err,
-							showCancel: false
-						})
+			change(code) {
+				this.getHotelList({ areaCode: code })
+			},
+			// 根据城市码 获取当前城市的 酒店信息
+			getHotelList(code) {
+				this.$api.getHotelList(code).then(res => {
+					if (res.success) {
+						this.hotelList = res.data.hotels
+					} else{
+						this.hotelList = []
 					}
 				})
-			},
-			change(code) {
-				console.log(code);
-				this.getHotelList(code)
 			}
 		}
 	}

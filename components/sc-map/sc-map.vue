@@ -59,46 +59,22 @@
 					title: 'Loading'
 				})
 				let _this = this
-				uniCloud.callFunction({
-					name: 'getPosByCode',
-					data: {
-						areaCode: e.areaCode
-					},
-					success(res) {
-						uni.hideLoading()
-						let result = res.result.response
-						if (result) {
-							_this.position = result.name
-							_this.longitude = result.pos[0]
-							_this.latitude = result.pos[1]
-						} else {
-								uni.showModal({
-								content: '当前城市没有相关数据!',
-								showCancel: false
-							})
-						}
-						_this.$emit('on-change', result.areaCode)
-					},
-					fail(err) {
-						uni.hideLoading()
+				this.$api.getCityByCode({ areaCode: e.areaCode }).then(res => {
+					uni.hideLoading()
+					if (res.success) {
+						console.log(e.areaCode);
+						console.log(res);
+						_this.position = res.data.name
+						_this.longitude = res.data.pos[0]
+						_this.latitude = res.data.pos[1]
+						_this.$emit('on-change', res.data.areaCode)
+					} else {
 						uni.showModal({
-							content: err,
+							content: '该城市无数据!',
 							showCancel: false
 						})
 					}
 				})
-				// let res = getPos(e.areaCode)
-				// if (res === undefined) {
-				// 	uni.showModal({
-				// 		content: '当前城市没有相关数据!',
-				// 		showCancel: false
-				// 	})
-				// } else {
-				// 	this.position = res.name
-				// 	this.longitude = res.pos[0]
-				// 	this.latitude = res.pos[1]
-				// 	this.$emit('on-change', res)
-				// }
 			}
 		}
 	}
